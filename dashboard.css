@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 20px 7%;
+    background: #050505;
+    border-bottom: 1px solid #222;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e00000;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e00000;
+}
+
+.nav-links .logout {
+    background: #e00000;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.nav-links .logout:hover {
+    background: #b00000;
+    color: white;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    width: 86%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+
+/* WELCOME */
+
+.welcome {
+    margin-bottom: 35px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome h1::first-line {
+    color: white;
+}
+
+.welcome p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+
+/* CARDS */
+
+.account-card,
+.project-card {
+    background: #151515;
+    border: 1px solid #252525;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.account-card h2,
+.project-card h2 {
+    color: #e00000;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.account-card p {
+    margin: 12px 0;
+    color: #ccc;
+}
+
+.account-card strong {
+    color: white;
+}
+
+
+/* PROJECT */
+
+.project-card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.project-card .status {
+    display: inline-block;
+    background: #222;
+    color: #e00000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .dashboard {
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+
+    .account-card,
+    .project-card {
+        padding: 22px;
+    }
+}

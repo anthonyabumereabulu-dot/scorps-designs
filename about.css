@@ -1,0 +1,533 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   STANDARD NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    min-height: 90px;
+
+    padding: 15px 7%;
+
+    background: #050505;
+
+    border-bottom: 1px solid #222;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e00000;
+}
+
+
+/* ACTIVE PAGE */
+
+.nav-links a.active {
+    color: #e00000;
+}
+
+
+/* LOGIN */
+
+.login-btn {
+    padding: 9px 18px;
+
+    border: 1px solid #e00000;
+
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background: #e00000;
+    color: white !important;
+}
+
+
+/* SIGN UP */
+
+.signup-btn {
+    padding: 10px 18px;
+
+    background: #e00000;
+
+    border-radius: 5px;
+}
+
+.signup-btn:hover {
+    background: #b00000;
+
+    color: white !important;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo img {
+        width: 210px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px 5%;
+    }
+
+    .logo img {
+        width: 220px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 450px) {
+
+    .logo img {
+        width: 200px;
+    }
+
+    .nav-links {
+        gap: 9px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        padding: 8px 13px;
+    }
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.92)
+        );
+
+    border-bottom: 1px solid #222;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.small-title,
+.section-label {
+    color: #e00000;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span,
+.section-text h2 span,
+.about-ending h2 span {
+    color: #e00000;
+}
+
+.hero-content p:last-child {
+    max-width: 650px;
+
+    color: #aaa;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   ABOUT SECTIONS
+========================= */
+
+.about-section {
+    padding: 100px 7%;
+
+    background: #0b0b0b;
+}
+
+.dark-section {
+    background: #111;
+}
+
+.section-content {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.section-text {
+    max-width: 900px;
+}
+
+.section-text h2 {
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.section-text p:not(.section-label) {
+    color: #aaa;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-section {
+    padding: 100px 7%;
+
+    background: #111;
+
+    border-top: 1px solid #222;
+}
+
+.section-heading {
+    max-width: 1100px;
+
+    margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+}
+
+.services-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.service-card {
+    min-height: 120px;
+
+    padding: 25px;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: #ddd;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-color: #e00000;
+
+    transform: translateY(-5px);
+
+    color: white;
+}
+
+
+/* =========================
+   CLOSING SECTION
+========================= */
+
+.about-ending {
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background: #0b0b0b;
+
+    border-top: 1px solid #222;
+}
+
+.about-ending h2 {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+}
+
+.about-ending a {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #e00000;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.about-ending a:hover {
+    background: #b00000;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px 7%;
+
+    text-align: center;
+
+    background: #050505;
+
+    border-top: 1px solid #222;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .services-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .about-hero {
+        min-height: 60vh;
+
+        padding: 70px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p:last-child {
+        font-size: 16px;
+    }
+
+    .about-section,
+    .services-section,
+    .about-ending {
+        padding: 70px 7%;
+    }
+
+    .section-text h2,
+    .section-heading h2,
+    .about-ending h2 {
+        font-size: 32px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .logo img {
+        width: 200px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+}
