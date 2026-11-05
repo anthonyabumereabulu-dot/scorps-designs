@@ -106,13 +106,13 @@ Working on this project provided practical experience in:
 ## Screenshots
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](screenshots/homepage.png.png)
 
 ### Login Page
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/login.png.png)
 
 ### Customer Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png.jpg)
 
 **Status:** Developed and running locally.
 
