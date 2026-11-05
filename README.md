@@ -103,6 +103,17 @@ Working on this project provided practical experience in:
 
 ## Project Status
 
+## Screenshots
+
+### Homepage
+![Homepage](screenshots/homepage.png)
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Customer Dashboard
+![Dashboard](screenshots/dashboard.png)
+
 **Status:** Developed and running locally.
 
 **Hosting:** Not yet deployed.
